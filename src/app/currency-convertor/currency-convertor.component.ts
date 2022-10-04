@@ -3,6 +3,7 @@ import data from '../../assets/currencies.json'
 import { CurrencyConvertorService } from './services/currency-convertor.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-currency-convertor',
@@ -14,7 +15,8 @@ export class CurrencyConvertorComponent implements OnInit {
   currenciesList = data;
   exchange_rates: number;
   constructor(private currencyConvertorService: CurrencyConvertorService,
-    private fb: FormBuilder) {
+    private fb: FormBuilder,
+    private toastr: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -74,6 +76,7 @@ export class CurrencyConvertorComponent implements OnInit {
       this.currencyConvertorService.getConvertionRate(base, target).subscribe((response) => {
         resolve(response)
       }, (error) => {
+        this.toastr.error('Error happened', 'Please try again later');
         reject(error)
         console.log(error)
       })
@@ -81,8 +84,8 @@ export class CurrencyConvertorComponent implements OnInit {
   }
 
   replaceMoneySign(val: string) {
-    if(val == 'EUR') return '€';
-    else if(val == 'TRY') return '₺';
+    if (val == 'EUR') return '€';
+    else if (val == 'TRY') return '₺';
     else return val;
   }
 
