@@ -8,7 +8,8 @@ import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { SharedModule } from './shared/shared.module';
-
+import { OnlineStatusModule } from 'ngx-online-status';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { SharedModule } from './shared/shared.module';
       registrationStrategy: 'registerWhenStable:30000'
     }),
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    OnlineStatusModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
