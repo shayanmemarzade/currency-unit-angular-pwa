@@ -1,0 +1,40 @@
+<section class="parent">
+    <form [formGroup]="currencyForm">
+        <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap fxFlex="100">
+            <div fxLayout="row" fxLayoutAlign="space-between">
+                <mat-form-field appearance="fill">
+                    <mat-label type="number">Amount</mat-label>
+                    <input matInput formControlName="baseAmount">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Select currency</mat-label>
+                    <mat-select formControlName="baseCurrency">
+                        <mat-option [value]="currency.currencyCode" *ngFor="let currency of currenciesList">
+                            {{currency.currencyName}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-between">
+                <mat-form-field appearance="fill">
+                    <mat-label type="number">Amount</mat-label>
+                    <input matInput matInput formControlName="targetAmount">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Select currency</mat-label>
+                    <mat-select formControlName="targetCurrency">
+                        <mat-option [value]="currency.currencyCode" *ngFor="let currency of currenciesList">
+                            {{currency.currencyName}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+    </form>
+</section>
+<section fxLayoutAlign="center" class="parent"
+    *ngIf="currencyForm.controls['baseAmount'].value && currencyForm.controls['baseCurrency'].value && currencyForm.controls['targetAmount'].value && currencyForm.controls['targetCurrency'].value">
+    <mat-list role="list">
+        <mat-list-item role="listitem">{{beautifyAmount(currencyForm.controls['baseAmount'].value)}} {{replaceMoneySign(currencyForm.controls['baseCurrency'].value)}}</mat-list-item>
+        <mat-list-item role="listitem">Is eqaul to {{beautifyAmount(currencyForm.controls['targetAmount'].value)}} {{replaceMoneySign(currencyForm.controls['targetCurrency'].value)}}
+        </mat-list-item>
+    </mat-list>
+</section>

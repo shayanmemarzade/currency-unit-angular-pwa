@@ -1,0 +1,158 @@
+[
+    {
+        "currencyCode": "ARS",
+        "currencyName": "Argentine Peso"
+    },
+    {
+        "currencyCode": "AUD",
+        "currencyName": "Australian Dollar"
+    },
+    {
+        "currencyCode": "BGN",
+        "currencyName": "Bulgarian Lev"
+    },
+    {
+        "currencyCode": "BNB",
+        "currencyName": "Binance Coin"
+    },
+    {
+        "currencyCode": "BRL",
+        "currencyName": "Brazilian Real"
+    },
+    {
+        "currencyCode": "CAD",
+        "currencyName": "Canadian Dollar"
+    },
+    {
+        "currencyCode": "CHF",
+        "currencyName": "Swiss Franc"
+    },
+    {
+        "currencyCode": "CNY",
+        "currencyName": "Chinese Yuan"
+    },
+    {
+        "currencyCode": "CZK",
+        "currencyName": "Czech Republic Koruna"
+    },
+    {
+        "currencyCode": "DKK",
+        "currencyName": "Danish Krone"
+    },
+    {
+        "currencyCode": "DZD",
+        "currencyName": "Algerian Dinar"
+    },
+    {
+        "currencyCode": "EUR",
+        "currencyName": "Euro"
+    },
+    {
+        "currencyCode": "GBP",
+        "currencyName": "British Pound Sterling"
+    },
+    {
+        "currencyCode": "HKD",
+        "currencyName": "Hong Kong Dollar"
+    },
+    {
+        "currencyCode": "HRK",
+        "currencyName": "Croatian Kuna"
+    },
+    {
+        "currencyCode": "HUF",
+        "currencyName": "Hungarian Forint"
+    },
+    {
+        "currencyCode": "IDR",
+        "currencyName": "Indonesian Rupiah"
+    },
+    {
+        "currencyCode": "ILS",
+        "currencyName": "Israeli New Sheqel"
+    },
+    {
+        "currencyCode": "INR",
+        "currencyName": "Indian Rupee"
+    },
+    {
+        "currencyCode": "ISK",
+        "currencyName": "Icelandic Króna"
+    },
+    {
+        "currencyCode": "JPY",
+        "currencyName": "Japanese Yen"
+    },
+    {
+        "currencyCode": "KRW",
+        "currencyName": "South Korean Won"
+    },
+    {
+        "currencyCode": "LTC",
+        "currencyName": "Litecoin"
+    },
+    {
+        "currencyCode": "MAD",
+        "currencyName": "Moroccan Dirham"
+    },
+    {
+        "currencyCode": "MXN",
+        "currencyName": "Mexican Peso"
+    },
+    {
+        "currencyCode": "MYR",
+        "currencyName": "Malaysian Ringgit"
+    },
+    {
+        "currencyCode": "NOK",
+        "currencyName": "Norwegian Krone"
+    },
+    {
+        "currencyCode": "NZD",
+        "currencyName": "New Zealand Dollar"
+    },
+    {
+        "currencyCode": "PHP",
+        "currencyName": "Philippine Peso"
+    },
+    {
+        "currencyCode": "PLN",
+        "currencyName": "Polish Zloty"
+    },
+    {
+        "currencyCode": "RON",
+        "currencyName": "Romanian Leu"
+    },
+    {
+        "currencyCode": "RUB",
+        "currencyName": "Russian Ruble"
+    },
+    {
+        "currencyCode": "SEK",
+        "currencyName": "Swedish Krona"
+    },
+    {
+        "currencyCode": "SGD",
+        "currencyName": "Singapore Dollar"
+    },
+    {
+        "currencyCode": "THB",
+        "currencyName": "Thai Baht"
+    },
+    {
+        "currencyCode": "TRY",
+        "currencyName": "Turkish Lira"
+    },
+    {
+        "currencyCode": "TWD",
+        "currencyName": "New Taiwan Dollar"
+    },
+    {
+        "currencyCode": "XRP",
+        "currencyName": "Ripple"
+    },
+    {
+        "currencyCode": "ZAR",
+        "currencyName": "South African Rand"
+    }
+]
