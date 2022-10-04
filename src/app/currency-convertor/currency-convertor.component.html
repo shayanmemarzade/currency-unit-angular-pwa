@@ -1,7 +1,7 @@
 <section class="parent">
     <form [formGroup]="currencyForm">
-        <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap fxFlex="100">
-            <div fxLayout="row" fxLayoutAlign="space-between">
+        <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap >
+            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
                 <mat-form-field appearance="fill">
                     <mat-label type="number">Amount</mat-label>
                     <input matInput formControlName="baseAmount">
@@ -14,7 +14,7 @@
                     </mat-select>
                 </mat-form-field>
             </div>
-            <div fxLayout="row" fxLayoutAlign="space-between">
+            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
                 <mat-form-field appearance="fill">
                     <mat-label type="number">Amount</mat-label>
                     <input matInput matInput formControlName="targetAmount">
