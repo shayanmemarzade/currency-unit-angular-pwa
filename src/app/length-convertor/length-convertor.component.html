@@ -1,0 +1,32 @@
+<section fxLayoutAlign="center" class="parent">
+    <form [formGroup]="lengthForm" fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="space-around"
+        fxFlex.gt-sm="900px">
+        <div fxLayoutAlign="center center" fxFlex="100">
+            <mat-form-field appearance="fill">
+                <mat-label type="number">Meter</mat-label>
+                <input matInput formControlName="meter">
+            </mat-form-field>
+        </div>
+        <div fxLayoutAlign="center center" fxFlex="100">
+            <mat-form-field appearance="fill">
+                <mat-label type="number">Yard</mat-label>
+                <input matInput formControlName="yard">
+            </mat-form-field>
+        </div>
+        <div fxLayoutAlign="center center" fxFlex="100">
+            <mat-form-field appearance="fill">
+                <mat-label type="number">Inch</mat-label>
+                <input matInput formControlName="inch">
+            </mat-form-field>
+        </div>
+    </form>
+
+</section>
+<section fxLayoutAlign="center" class="parent"
+    *ngIf="lengthForm.controls['meter'].value && lengthForm.controls['yard'].value && lengthForm.controls['inch'].value">
+    <mat-list role="list">
+        <mat-list-item role="listitem">{{beautifyNumber(lengthForm.controls['meter'].value)}}m</mat-list-item>
+        <mat-list-item role="listitem">Is eqaul to {{beautifyNumber(lengthForm.controls['yard'].value)}}yd</mat-list-item>
+        <mat-list-item role="listitem">and {{beautifyNumber(lengthForm.controls['inch'].value)}}in</mat-list-item>
+    </mat-list>
+</section>
