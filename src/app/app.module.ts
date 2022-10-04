@@ -10,11 +10,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { SharedModule } from './shared/shared.module';
 import { OnlineStatusModule } from 'ngx-online-status';
 import { ToastrModule } from 'ngx-toastr';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
